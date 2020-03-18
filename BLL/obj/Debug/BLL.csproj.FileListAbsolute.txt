@@ -1,0 +1,11 @@
+F:\asp_code\SimpleBlog\BLL\bin\Debug\BLL.dll
+F:\asp_code\SimpleBlog\BLL\bin\Debug\BLL.pdb
+F:\asp_code\SimpleBlog\BLL\bin\Debug\DAL.dll
+F:\asp_code\SimpleBlog\BLL\bin\Debug\Model.dll
+F:\asp_code\SimpleBlog\BLL\bin\Debug\MySql.Data.dll
+F:\asp_code\SimpleBlog\BLL\bin\Debug\DAL.pdb
+F:\asp_code\SimpleBlog\BLL\bin\Debug\Model.pdb
+F:\asp_code\SimpleBlog\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+F:\asp_code\SimpleBlog\BLL\obj\Debug\BLL.csproj.CopyComplete
+F:\asp_code\SimpleBlog\BLL\obj\Debug\BLL.dll
+F:\asp_code\SimpleBlog\BLL\obj\Debug\BLL.pdb
