@@ -27,9 +27,9 @@ namespace BLL
         {
             return DetailInfoDAL.AddComment(info);
         }
-        //public static DataTable DataBind(DetailInfo info)
-        //{
-        //    return DetailInfoDAL.DataBind(info);
-        //}
+        public static DataTable DataBind(DetailInfo info)
+        {
+            return DetailInfoDAL.DataBind(info);
+        }
     }
 }

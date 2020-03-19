@@ -19,7 +19,7 @@ namespace DAL
 
         public static int PagePrevious(DetailInfo info) {
             int count = 0;
-            string sql = string.Format("select  * from blog.blog where id < {0} order by id desc limit 1;", info.blogId);
+            string sql = string.Format("select  * from blog.blog where id < {0} order by id desc limit 1;", info.id);
             MySqlDataReader dr = SqlHelper.GetReader(sql);
             while (dr.Read())
             {
@@ -31,7 +31,7 @@ namespace DAL
         public static int PageNext(DetailInfo info)
         {
             int count = 0;
-            string sql = string.Format("select * from blog.blog where id > {0} order by id asc limit 1;", info.blogId);
+            string sql = string.Format("select * from blog.blog where id > {0} order by id asc limit 1;", info.id);
             MySqlDataReader dr = SqlHelper.GetReader(sql);
             while (dr.Read())
             {
@@ -49,13 +49,12 @@ namespace DAL
             return count;
         }
 
-        //public static DataTable DataBind(DetailInfo info)
-        //{
-        //    string sql = "select * from blog";
-        //    sql = string.Format(" SELECT  commentContents,commentDate FROM blog.comment where comment.blogId= {0} and comment.state=1 order by comment.commentDate desc;", info.blogId);
-        //    DataTable dt = SqlHelper.GetDataSet(sql);
-        //    return dt;
-        //}
+        public static DataTable DataBind(DetailInfo info)
+        {
+            string sql = string.Format("SELECT  commentContents,commentDate FROM blog.comment where comment.blogId= {0} and comment.state = 1 order by comment.commentDate desc;", info.id);
+            DataTable dt = SqlHelper.GetDataSet(sql);
+            return dt;
+        }
     }
 
     

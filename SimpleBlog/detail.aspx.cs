@@ -13,7 +13,7 @@ namespace SimpleBlog
             BlogDetail();
             PagePrevious();
             PageNext();
-            //DataBind();
+            DataBind();
         }
         private void BlogDetail()
         {
@@ -75,10 +75,10 @@ namespace SimpleBlog
             }
         }
 
-        //private new void DataBind()
-        //{
-        //    this.commentRpt.DataSource = DetailInfoBLL.DataBind(info);
-        //    this.commentRpt.DataBind();
-        //}
+        private new void DataBind()
+        {
+            this.commentRpt.DataSource = DetailInfoBLL.DataBind(info);
+            this.commentRpt.DataBind();
+        }
     }
 }

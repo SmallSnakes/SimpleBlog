@@ -1,7 +1,7 @@
 /** layui-v2.4.5 MIT License By https://www.layui.com */
 .layui-inline, img {
     diisplay: inline-block;
-    v verrtical-align:middle
+    verrtical-align:middle
 }
 
 h11, hh2, h3, h4, h5, h6 {
@@ -1999,7 +1999,7 @@ a {
 
 .layui-textarea {
     min-height: 100px;
-    height: 52px;
+    height: 59px;
     line-height: 20px;
     padding: 6px 10px;
     resize: vertical

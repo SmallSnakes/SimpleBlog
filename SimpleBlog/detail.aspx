@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="detail.aspx.cs" Inherits="SimpleBlog.detail" %>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     
-    <div style="height:30px"></div>
+ 
     <div class="content whisper-content leacots-content details-content">
                 <div class="cont w1000">
                     <div class="whisper-list">
@@ -30,9 +30,7 @@
                                         </button>
                                         <button class="layui-btn layui-btn-primary">
                                             <asp:HyperLink ID="next" runat="server" Text="下一篇">
-
                                             </asp:HyperLink>
-
                                         </button>
                                     </div>
                                 </div>
@@ -41,7 +39,8 @@
                                 <div class="form" runat="server">
                                     <div class="layui-form-item layui-form-text">
                                         <div class="layui-input-block">
-                                            <textarea name="desc" id="desc" placeholder="有什么想说的，评论一下吧！" class="layui-textarea"></textarea>
+                                            <textarea name="desc"  id="desc" placeholder="Tell me your any suggestions"  class="layui-textarea"></textarea>
+                                            
                                         </div>
                                     </div>
                                     <div class="layui-form-item">
@@ -61,7 +60,7 @@
                                         <ItemTemplate>
                                             <div class="cont">
                                                 <div class="img">
-                                                    <img src="res/img/header.png" alt="" />
+                                                    <img src="res/img/NET.png" alt="" />
                                                 </div>
                                                 <div class="text">
                                                     <p class="tit"><span class="name">热心网友</span><span class="data"><%#Eval("commentDate","{0:yyyy-MM-dd HH:mm:ss}")%></span></p>
@@ -76,8 +75,6 @@
                             </div>
                         </div>
                     </div>
-                    <div id="demo" style="text-align: center;"></div>
                 </div>
             </div>
-        
 </asp:Content>
