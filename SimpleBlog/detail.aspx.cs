@@ -11,8 +11,8 @@ namespace SimpleBlog
         {
             info.id = Request.QueryString["id"];
             BlogDetail();
-            //PagePrevious();
-            //PageNext();
+            PagePrevious();
+            PageNext();
             //DataBind();
         }
         private void BlogDetail()
@@ -21,36 +21,36 @@ namespace SimpleBlog
             this.blogDetailRpt.DataBind();
         }
 
-        //void PagePrevious()
-        //{
-        //    int count = DetailInfoBLL.PagePrevious(info);
-        //    if (count == 0)
-        //    {
-        //        this.previous.Enabled = false;
-        //        this.previous.Text = "没有上一篇了";
-        //    }
-        //    else
-        //    {
-        //        this.previous.NavigateUrl = "detail.aspx?id=" + count;
-        //    }
+        void PagePrevious()
+        {
+            int count = DetailInfoBLL.PagePrevious(info);
+            if (count == 0)
+            {
+                this.previous.Enabled = false;
+                this.previous.Text = "没有上一篇了";
+            }
+            else
+            {
+                this.previous.NavigateUrl = "detail.aspx?id=" + count;
+            }
 
-        //}
+        }
 
-        //void PageNext()
-        //{
+        void PageNext()
+        {
 
-        //    int count = DetailInfoBLL.PageNext(info);
+            int count = DetailInfoBLL.PageNext(info);
 
-        //    if (count == 0)
-        //    {
-        //        this.next.Enabled = false;
-        //        this.next.Text = "没有下一篇了";
-        //    }
-        //    else
-        //    {
-        //        this.next.NavigateUrl = "detail.aspx?id=" + count;
-        //    }
-        //}
+            if (count == 0)
+            {
+                this.next.Enabled = false;
+                this.next.Text = "没有下一篇了";
+            }
+            else
+            {
+                this.next.NavigateUrl = "detail.aspx?id=" + count;
+            }
+        }
 
         protected void AddComment_Click(object sender, EventArgs e)
         {
