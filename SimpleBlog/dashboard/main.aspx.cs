@@ -15,7 +15,7 @@ namespace SimpleBlog.dashboard
         {
             if (Session["admin"] == null)
             {
-                Response.Redirect("Logindemo.aspx");
+                Response.Redirect("login.aspx");
             }
             countAllBlog();
         }

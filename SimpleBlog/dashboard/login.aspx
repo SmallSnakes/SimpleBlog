@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LoginDemo.aspx.cs" Inherits="SimpleBlog.dashboard.LoginDemo" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="SimpleBlog.dashboard.login" %>
 
 <!DOCTYPE html>
 

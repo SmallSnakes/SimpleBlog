@@ -21,7 +21,7 @@ namespace SimpleBlog.dashboard
         {
             if (Session["admin"] == null)
             {
-                Response.Redirect("LoginDemo.aspx");
+                Response.Redirect("login.aspx");
             }
             if (!Page.IsPostBack)
             {

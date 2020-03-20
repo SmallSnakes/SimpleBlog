@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace SimpleBlog.dashboard
 {
-    public partial class index : System.Web.UI.Page
+    public partial class logout : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -17,9 +17,9 @@ namespace SimpleBlog.dashboard
             }
             else
             {
-                string userName = Session["admin"].ToString();
-                this.Label1.Text = userName;
 
+                Session["admin"] = "";
+                Response.Redirect("login.aspx");
             }
         }
     }

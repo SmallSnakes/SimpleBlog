@@ -78,8 +78,10 @@
     <Content Include="dashboard\blog_list.aspx" />
     <Content Include="dashboard\edit_blog.aspx" />
     <Content Include="dashboard\index.aspx" />
-    <Content Include="dashboard\LoginDemo.aspx" />
+    <Content Include="dashboard\login.aspx" />
+    <Content Include="dashboard\logout.aspx" />
     <Content Include="dashboard\main.aspx" />
+    <Content Include="favicon.ico" />
     <Content Include="index.aspx" />
     <Content Include="detail.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -2057,9 +2059,16 @@
     <Compile Include="dashboard\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="dashboard\LoginDemo.aspx.cs">
-      <DependentUpon>LoginDemo.aspx</DependentUpon>
+    <Compile Include="dashboard\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dashboard\logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dashboard\logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
     </Compile>
     <Compile Include="dashboard\main.aspx.cs">
       <DependentUpon>main.aspx</DependentUpon>
