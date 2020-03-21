@@ -2,18 +2,20 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
      
-
-
-    <div class="banner">
-        <div class="cont w1000">
-            <div class="title">
-                <h3>Welcome</h3>
-
-            </div>
-
-        </div>
+  <div id="show" >
+      <div class="img">
+          <span>
+              <img src="Style/images/1.jpg" />
+              <img src="Style/images/2.jpg" />
+              <img src="Style/images/3.jpg" />
+              <img src="Style/images/4.jpg" />
+              <img src="Style/images/5.jpg" />
+          </span>
+        <div class="masks mk1"></div>
+        <div id="masks"></div>
+      </div>
     </div>
-    
+
     <div class="content">
         <div class="cont w1000">
             <div class="title">
