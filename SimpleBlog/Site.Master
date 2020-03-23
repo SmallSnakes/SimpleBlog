@@ -36,7 +36,7 @@
                 <div class="navbar-collapse collapse" >
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">主页</a></li>
-                        <li><a runat="server" href="~/About">关于</a></li>
+                        <li><a runat="server" href="~/about">关于</a></li>
                         <li><a runat="server" href="~/Contact">联系方式</a></li>
                         <li><a href="/dashboard/login.aspx" target="_blank" title="点击登录"><i class="layui-icon layui-icon-username"></i></a></li>
                     </ul>
@@ -47,21 +47,21 @@
             
     </div>
 
-        <div >
+        <div>
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
-            <hr />
-            <footer class="navbar navbar-inverse" style="color:darkgray">
-                <p>&copy; <%: DateTime.Now.Year %> - 我的 ASP.NET 应用程序</p>
-            </footer>
-        </div>
+             </div>
+          
 
     </form>
-        <script type="text/javascript" src="res/layui/layui.js"></script>
-    <!-- jQuery 3 -->
-    <script src="../Style/jquery/dist/jquery.min.js"></script>
-    <!-- Bootstrap 3.3.7 -->
-    <script src="../Style/bootstrap/dist/js/bootstrap.min.js"></script>
+        <div>
+            <hr />
+            <footer style="color:darkgray;height:50px;text-align:center; ">
+                <p>&copy; <%: DateTime.Now.Year %> - 我的 ASP.NET 应用程序</p>
+            </footer>
+        </div> 
+ 
+   
 
 </body>
 

@@ -1,25 +1,18 @@
 ﻿<%@ Page Title="SimpleBlog" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="SimpleBlog._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-     
-  <div id="show" >
-      <div class="img">
-          <span>
-              <img src="Style/images/1.jpg" />
-              <img src="Style/images/2.jpg" />
-              <img src="Style/images/3.jpg" />
-              <img src="Style/images/4.jpg" />
-              <img src="Style/images/5.jpg" />
-          </span>
-        <div class="masks mk1"></div>
-        <div id="masks"></div>
-      </div>
+    <div class="banner">
+        <div class="cont w1000">
+            <div class="title">
+                <h4>Hello,World</h4>
+            </div>
+        </div>
     </div>
 
     <div class="content">
         <div class="cont w1000">
             <div class="title">
-                <span class="layui-breadcrumb" >
+                <span class="layui-breadcrumb" lay-separator="|">
                     <a href="javascript:;" class="active">全部文章</a>
 
                 </span>
@@ -42,7 +35,7 @@
                                             <h5><%#Eval("typeName")%> <%#Eval("releaseDate","{0:yyyy-MM-dd HH:mm:ss}")%></h5>
 
                                             <p><%#Eval("summary").ToString().Length>60?Eval("summary").ToString().Substring(0,60)+"..":Eval("summary") %> </p>
-                                            <a href="detail.aspx?id=<%#Eval("id")%>" target="_blank" class="go-icon"></a>
+                                            <a href="detail.aspx?id=<%#Eval("id")%>" target="_blank" class="go-icon">查看更多</a>
                                         </div>
                                     </div>
                                 </div>
@@ -77,5 +70,19 @@
             </div>
         </div>
     </div>
-    
+   <%-- 背景插件--%> 
+    <script color="0,0,0" opacity="0.5" count="99" src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.js" type="text/javascript" charset="utf-8"></script>
+    <%--天气控件--%>
+    <script type="text/javascript" src="res/layui/layui.js"></script>
+    <script type="text/javascript">
+        layui.config({
+            base: 'res/js/util/'
+        }).use(['element', 'laypage', 'jquery', 'menu'], function () {
+            element = layui.element, laypage = layui.laypage, $ = layui.$, menu = layui.menu;
+            menu.init();
+        })
+    </script>
+  <%--  深色模式--%>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
+    <script> new Darkmode().showWidget();</script>
 </asp:Content>

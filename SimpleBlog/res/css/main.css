@@ -43,7 +43,15 @@ body{font: 14px 宋体 Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-se
 .content .cont .list-item .item{margin-bottom: 80px; overflow: hidden;}
 .content .cont .list-item .item .img img{width: 100%;}
 .content .cont .list-item .item .item-cont{padding-left: 100px;}
-.content .cont .list-item .item .item-cont .go-icon{width: 33px; height: 11px; background: url(../img/jiantou.png) center center no-repeat; display: block; padding:10px 0; margin-top: 16px;}
+    .content .cont .list-item .item .item-cont .go-icon {
+        width: 60px;
+        height: 11px;
+        color: darkgray;
+        display: block;
+        padding: 10px 0;
+        margin-top: 30px;
+        text-decoration: none;
+    }
 .content .cont .list-item .item .item-cont h3{font-size: 24px; margin:20px 0;}
 .content .cont .list-item .item .item-cont h3 .new-icon{width: 36px; height: 18px; line-height: 18px; text-align: center; padding:0; margin: -3px 0 0 10px;}
 .content .cont .list-item .item .item-cont h5{font-size: 12px; color: #ff7f21; margin-bottom: 32px;}
@@ -164,21 +172,9 @@ body{font: 14px 宋体 Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-se
 /*end-album*/
 
 
-/*about*/
-.about-content{background: #faf8fb;}
-.about-content .item{padding-bottom: 100px;}
-.about-content .item h3{font-size: 24px; color: #3f2863; line-height: 100px;}
-.about-content .item.info .cont{overflow: hidden;}
-.about-content .item.info img{float: left; height: 220px; margin-right:86px; }
-.about-content .item.info p{line-height: 50px; margin-top: 15px;}
-.about-content .item.info p{font-size: 16px;}
-.about-content .item.tool .cont-box{text-align: center;}
-.about-content .item.tool .cont-box img{ }
-.about-content .item.tool .cont-box p{line-height: 56px;}
-.about-content .item.contact .cont{overflow: hidden;}
-.about-content .item.contact .cont img{width: 110px; height: 110px; float: left; margin:0 100px;}
-.about-content .item.contact .cont .text{line-height: 36px;}
-/*end-about*/
+.inLine a:hover {
+    color: #ff0000
+}
 
 @media screen and (max-width: 1200px){
   .header .logo{left: 20px;}
