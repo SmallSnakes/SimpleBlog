@@ -101,7 +101,7 @@
     <script src="../Style/kindeditor/lang/zh-CN.js"></script>
     <script src="../Style/kindeditor/plugins/code/prettify.js"></script>
     <script>
-        //执行一个laydate实例
+        //执行一个laydate实例，在添加日期时候使用
         laydate.render({
             elem: '#releaseDate'//指定元素
             , type: 'datetime'
