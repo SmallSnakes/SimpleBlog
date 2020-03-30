@@ -47,6 +47,7 @@
     <Compile Include="BlogAddBLL.cs" />
     <Compile Include="BlogEditBLL.cs" />
     <Compile Include="BlogListBLL.cs" />
+    <Compile Include="ContactInfoBLL.cs" />
     <Compile Include="DetailInfoBLL.cs" />
     <Compile Include="IndexInfoBLL.cs" />
     <Compile Include="MainInfoBLL.cs" />

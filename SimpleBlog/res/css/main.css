@@ -24,7 +24,7 @@ body{font: 14px 宋体 Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-se
 .header .header-down-nav{display: none;}
 
 
-.banner{height: 600px; width: 100%; background: url(../img/banner3.jpg) no-repeat; background-size:cover;}
+.banner{height: 600px; width: 100%; background: url(../img/banner.jpg) no-repeat; background-size:cover;}
 .banner .cont{position: relative;}
 .banner .title{color: #fff; position: absolute; top: 152px; left: 0;}
 .banner .title h3{font-size: 80px; line-height: 88px;}
@@ -142,7 +142,7 @@ body{font: 14px 宋体 Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-se
 
 
 /*details*/
-.details-content .article-cont img{float: none; width: 100%;}
+.details-content .article-cont img{float: none; width: 80%;}
 .details-content .article-cont .title{text-align: center; margin-bottom: 0;}
 .details-content .article-cont .title h3{font-size: 24px; margin-bottom: 36px;}
 .details-content .article-cont .title p{padding:0;}

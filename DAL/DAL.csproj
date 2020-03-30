@@ -48,6 +48,7 @@
     <Compile Include="BlogAddDAL.cs" />
     <Compile Include="BlogEditDAL.cs" />
     <Compile Include="BlogListDAL.cs" />
+    <Compile Include="ContactInfoDAL.cs" />
     <Compile Include="DetailInfoDAL.cs" />
     <Compile Include="IndexInfoDAL.cs" />
     <Compile Include="MainInfoDAL.cs" />

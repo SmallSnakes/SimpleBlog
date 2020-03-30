@@ -1,7 +1,8 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="detail.aspx.cs" Inherits="SimpleBlog.detail" %>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    
- 
+     <link rel="stylesheet" type="text/css" href="res/css/main.css" /> 
+    <link rel="stylesheet" type="text/css" href="res/layui/css/layui.css" />
+    <form id="form1" runat="server">
     <div class="content whisper-content leacots-content details-content">
                 <div class="cont w1000">
                     <div class="whisper-list">
@@ -77,4 +78,5 @@
                     </div>
                 </div>
             </div>
+        </form>
 </asp:Content>

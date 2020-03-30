@@ -44,6 +44,7 @@
     <Compile Include="BlogAddInfo.cs" />
     <Compile Include="BlogEditInfo.cs" />
     <Compile Include="BlogListInfo.cs" />
+    <Compile Include="ContactInfo.cs" />
     <Compile Include="DetailInfo.cs" />
     <Compile Include="IndexInfo.cs" />
     <Compile Include="UserInfo.cs" />
