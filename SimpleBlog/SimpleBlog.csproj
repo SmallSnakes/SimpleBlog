@@ -86,10 +86,15 @@
     <Content Include="index.aspx" />
     <Content Include="detail.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="res\css\about.css" />
+    <Content Include="res\img\banner\banner.jpg" />
+    <Content Include="res\img\banner\banner1.jpg" />
+    <Content Include="res\img\banner\banner2.jpg" />
+    <Content Include="res\img\banner\banner4.jpg" />
+    <Content Include="res\img\banner\banner5.jpg" />
     <Content Include="res\img\NET.png" />
     <Content Include="res\css\bootstrap-theme.css" />
     <Content Include="res\css\Site.css" />
-    <Content Include="res\img\banner2.jpg" />
     <Content Include="res\img\banner3.jpg" />
     <Content Include="res\img\头像\头像.jpg" />
     <Content Include="res\img\头像\头像1.1.png" />
@@ -1911,9 +1916,7 @@
     <Content Include="dist\js\pages\dashboard2.js" />
     <Content Include="res\css\main.css" />
     <Content Include="res\img\banner.jpg" />
-    <Content Include="res\img\jiantou.png" />
     <Content Include="res\img\liuyan.jpg" />
-    <Content Include="res\img\wy_img1.jpg" />
     <Content Include="res\img\wy_img2.jpg" />
     <Content Include="res\img\wy_img3.jpg" />
     <Content Include="res\img\wy_img4.jpg" />
@@ -2026,7 +2029,6 @@
     <Content Include="res\layui\lay\modules\upload.js" />
     <Content Include="res\layui\lay\modules\util.js" />
     <Content Include="Web.config" />
-    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="about.aspx.cs">
@@ -2106,13 +2108,6 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

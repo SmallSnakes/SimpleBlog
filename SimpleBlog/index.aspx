@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="SimpleBlog" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="SimpleBlog._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+  <link rel="stylesheet" type="text/css" href="res/css/main.css" />
     <div class="banner">
         <div class="cont w1000">
             <div class="title">

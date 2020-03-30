@@ -28,7 +28,7 @@
                 </div>
                 <!-- /.login-logo -->
                 <div class="login-box-body">
-                    <p class="login-box-msg">管理员登录</p>
+                    <p class="login-box-msg">Login In</p>
 
 
                     <div class="form-group has-feedback">
@@ -39,8 +39,17 @@
                         <input type="password" class="form-control" placeholder="密码" id="password" name="password" />
                         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                     </div>
-
+                    <%-- <div class="row">
+                          <div class="col-8">
+                            <div class="icheck-primary">
+                              <input type="checkbox" id="remember" />
+                              <label for="remember">
+                                Remember Me
+                          </label>
+                        </div>
+                      </div>--%>
                     <div class="row" style="margin-top: 30px">
+                       
                         <div class="col-xs-12">
                             <asp:Button ID="login" runat="server" Text="登陆" OnClick="Login_Click" class="btn btn-primary btn-block btn-flat" />
                         </div>
