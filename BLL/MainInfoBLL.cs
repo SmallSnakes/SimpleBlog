@@ -12,11 +12,25 @@ namespace BLL
    public class MainInfoBLL
     {
         
-        public int MainInfo()
+        public static int countBlog()
         {
-            MainInfoDAL infoDal = new MainInfoDAL();
-            int result = infoDal.MainInfo();
-            return result;
+            return MainInfoDAL.countBlog();
+        }
+        public static int countType()
+        {
+            return MainInfoDAL.countType();
+        }
+        public static int countUser()
+        {
+            return MainInfoDAL.countUser();
+        }
+        public static int countComment()
+        {
+            return MainInfoDAL.countComment();
+        }
+        public static int countContact()
+        {
+            return MainInfoDAL.countContact();
         }
 
     }

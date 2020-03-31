@@ -88,12 +88,6 @@
     <Content Include="index.aspx" />
     <Content Include="detail.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="res\css\about.css" />
-    <Content Include="res\img\banner\banner.jpg" />
-    <Content Include="res\img\banner\banner1.jpg" />
-    <Content Include="res\img\banner\banner2.jpg" />
-    <Content Include="res\img\banner\banner4.jpg" />
-    <Content Include="res\img\banner\banner5.jpg" />
     <Content Include="res\img\NET.png" />
     <Content Include="res\css\bootstrap-theme.css" />
     <Content Include="res\css\Site.css" />
@@ -1927,7 +1921,6 @@
     <Content Include="dist\js\pages\dashboard2.js" />
     <Content Include="res\css\main.css" />
     <Content Include="res\img\banner.jpg" />
-    <Content Include="res\img\liuyan.jpg" />
     <Content Include="res\img\wy_img2.jpg" />
     <Content Include="res\img\wy_img3.jpg" />
     <Content Include="res\img\wy_img4.jpg" />

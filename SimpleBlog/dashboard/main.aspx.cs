@@ -17,14 +17,48 @@ namespace SimpleBlog.dashboard
             {
                 Response.Redirect("login.aspx");
             }
-            countAllBlog();
+            countBlog();
+            countComment();
+            countContact();
+            countType();
+            countUser();
+
         }
 
-        MainInfoBLL mainBLL = new MainInfoBLL();
-        void countAllBlog()
+       
+        protected void countBlog()
         { 
-            int count = mainBLL.MainInfo();
+            int count = MainInfoBLL.countBlog();
             this.blog.Text = count.ToString();
+        }
+        protected void countType()
+        {
+           
+            
+            int count = MainInfoBLL.countType();
+           
+            this.type.Text = count.ToString();
+        }
+
+        protected void countUser()
+        {
+            
+            int count = MainInfoBLL.countUser();
+          
+            this.user.Text = count.ToString();
+        }
+
+        protected void countComment()
+        {
+            
+            int count = MainInfoBLL.countComment();
+            this.comment.Text = count.ToString();
+        }
+
+        protected void countContact()
+        {
+            int count = MainInfoBLL.countContact();
+            this.words.Text = count.ToString();
         }
     }
 }

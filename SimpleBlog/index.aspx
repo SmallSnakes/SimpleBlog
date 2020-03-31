@@ -62,6 +62,8 @@
                 </ul>
             </div>
             </main>
+
+          <%--  最新文章--%>
             <aside class="col-md-4">
                 <div class="widget widget-recent-posts">
                     <h3 class="widget-title">最新文章</h3>
@@ -92,6 +94,7 @@
                     </ul>
                 </div>
 
+                <%--分类--%>
                 <div class="widget widget-category">
                     <h3 class="widget-title">分类</h3>
                     <ul>
@@ -111,9 +114,6 @@
                     <h3 class="widget-title">标签云</h3>
                     <ul>
                         <li>
-                            <a href="#">Django</a>
-                        </li>
-                        <li>
                             <a href="#">Python</a>
                         </li>
                         <li>
@@ -126,19 +126,16 @@
                             <a href="#">文档</a>
                         </li>
                         <li>
-                            <a href="#">AngularJS</a>
-                        </li>
-                        <li>
                             <a href="#">CSS</a>
                         </li>
                         <li>
                             <a href="#">JavaScript</a>
                         </li>
                         <li>
-                            <a href="#">Snippet</a>
+                            <a href="#">情感</a>
                         </li>
                         <li>
-                            <a href="#">jQuery</a>
+                            <a href="#">asp.net</a>
                         </li>
                     </ul>
                 </div>
