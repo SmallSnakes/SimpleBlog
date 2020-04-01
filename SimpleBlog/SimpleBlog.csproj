@@ -88,6 +88,7 @@
     <Content Include="index.aspx" />
     <Content Include="detail.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="res\css\own.css" />
     <Content Include="res\img\NET.png" />
     <Content Include="res\css\bootstrap-theme.css" />
     <Content Include="res\css\Site.css" />

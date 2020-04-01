@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="SimpleBlog" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="SimpleBlog._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    
 <form id="form1" runat="server">
 <div class="content-body">
     <div class="container">
@@ -66,16 +67,16 @@
           <%--  最新文章--%>
             <aside class="col-md-4">
                 <div class="widget widget-recent-posts">
-                    <h3 class="widget-title">最新文章</h3>
+                    <h3 class="widget-title">关于我</h3>
                     <ul>
                         <li>
-                            <a href="#">Django 博客开发入门教程：前言</a>
+                            <a href="#">ID：帅气的阿伟</a>
                         </li>
                         <li>
-                            <a href="#">Django 博客使用 Markdown 自动生成文章目录</a>
+                            <a href="#">QQ：1530692952</a>
                         </li>
                         <li>
-                            <a href="#">部署 Django 博客</a>
+                            <a href="#">直道相思了无益，未妨惆怅是轻狂。</a>
                         </li>
                     </ul>
                 </div>
@@ -88,9 +89,7 @@
                         <li>
                             <a href="#">2017 年 4 月</a>
                         </li>
-                        <li>
-                            <a href="#">2017 年 3 月</a>
-                        </li>
+                        
                     </ul>
                 </div>
 
@@ -99,13 +98,13 @@
                     <h3 class="widget-title">分类</h3>
                     <ul>
                         <li>
-                            <a href="#">Django 博客教程 <span class="post-count">(13)</span></a>
+                            <a href="#">技术 <span class="post-count">(13)</span></a>
                         </li>
                         <li>
-                            <a href="#">Python 教程 <span class="post-count">(11)</span></a>
+                            <a href="#">情感 <span class="post-count">(11)</span></a>
                         </li>
                         <li>
-                            <a href="#">Django 用户认证 <span class="post-count">(8)</span></a>
+                            <a href="#">游戏 <span class="post-count">(8)</span></a>
                         </li>
                     </ul>
                 </div>
@@ -114,7 +113,7 @@
                     <h3 class="widget-title">标签云</h3>
                     <ul>
                         <li>
-                            <a href="#">Python</a>
+                            <a href="#">Docker</a>
                         </li>
                         <li>
                             <a href="#">Java</a>
@@ -139,16 +138,26 @@
                         </li>
                     </ul>
                 </div>
+                     
+           
                 <div class="rss">
-                    <a href=""><span class="ion-social-rss-outline"></span> RSS 订阅</a>
+                    <a href="#"><span class="ion-social-rss-outline"></span> 来点音乐？</a>
                 </div>
+
+                
             </aside>
-        </div>
+            <div class="widget widget-recent-posts">
+                <%--音乐播放器--%>
+               <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=86 src="//music.163.com/outchain/player?type=2&id=515888361&auto=0&height=66">  </iframe>
+           </div>
+           </div>
     </div>
 </div>
  </form>   
-    <%-- 背景插件--%> 
-    <script color="0,0,0" opacity="0.5" count="99" src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.js" type="text/javascript" charset="utf-8"></script>
+    
+   <!--动态线条背景-->
+<script type="text/javascript"
+color="220,220,220" opacity='0.8' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+</script>
 
-  
 </asp:Content>

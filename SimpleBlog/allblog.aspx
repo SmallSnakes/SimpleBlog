@@ -65,8 +65,6 @@
     </div>
         </form>
     <script type="text/javascript" src="res/layui/layui.js"></script>
-    
-    
     <script type="text/javascript">
         layui.config({
             base: 'res/js/util/'

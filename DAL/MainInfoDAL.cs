@@ -12,6 +12,7 @@ namespace DAL
     {
         public static int countBlog()
         {
+            
             int result = 0;
             string sql = string.Format("select * from blog");
             DataTable dt = SqlHelper.GetDataSet(sql);
