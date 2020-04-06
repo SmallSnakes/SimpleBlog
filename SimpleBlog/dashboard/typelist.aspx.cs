@@ -1,9 +1,7 @@
 ﻿using BLL;
 using Model;
-using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -11,28 +9,28 @@ using System.Web.UI.WebControls;
 
 namespace SimpleBlog.dashboard
 {
-    public partial class blog_list : System.Web.UI.Page
+    public partial class typelist : System.Web.UI.Page
     {
-        BlogListInfo info = new BlogListInfo();
-        BlogListBLL listBll = new BlogListBLL();
-       
+
+        TypeListInfo info = new TypeListInfo();
         protected void Page_Load(object sender, EventArgs e)
         {
+           
             if (Session["admin"] == null)
             {
                 Response.Redirect("login.aspx");
             }
 
             Paging();
-            string action = Request.QueryString["action"];
+            DataBind();
+            info.action = Request.QueryString["action"];
             info.id = Request.QueryString["id"];
 
-            //删除
-            if ("delete".Equals(action))
+            if ("delete".Equals(info.action))
             {
-                
-                int c = DataDelete();
-                if (c > 0)
+                //删除
+                int count = TypeListBLL.DelType(info);
+                if (count > 0)
                 {
                     Response.Write("<script>alert('删除成功！！');</script>");
                 }
@@ -41,13 +39,12 @@ namespace SimpleBlog.dashboard
                     Response.Write("<script>alert('删除失败！！');</script>");
                 }
             }
-            DataBind();
-        } 
-        
-        //换页功能
-        private void Paging()
+            
+        }
+
+        public void Paging()
         {
-            int count = BlogListBLL.Paging();
+            int count = TypeListBLL.Paging();
 
             info.pageSize = 10;
             if (Request.QueryString["number"] != null)
@@ -91,37 +88,12 @@ namespace SimpleBlog.dashboard
 
         }
 
-        private new void DataBind()
-        {
-            this.blogRpt.DataSource = BlogListBLL.DataBind(info);
-            this.blogRpt.DataBind();
-          }
 
-        private void DataBindSearch()
+        private void DataBind()
         {
-            this.blogRpt.DataSource = BlogListBLL.SearchBlog(info);
-            this.blogRpt.DataBind();
+            this.typeRpt.DataSource = TypeListBLL.DataBind(info);
+            this.typeRpt.DataBind();
 
-        }
-        private int DataDelete()
-        {
-            int count = BlogListBLL.DelBlog(info);
-            return count;
-        }
-
-        protected void SearchBlog_Click(object sender, EventArgs e)
-        {
-             info.title = Request.Form["title"];
-            if (String.IsNullOrEmpty(info.title))
-            {
-                Paging();
-                DataBind();
-            }
-            else
-            {
-                Paging();
-                DataBindSearch();
-            }
         }
     }
   

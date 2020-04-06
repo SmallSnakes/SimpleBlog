@@ -77,13 +77,14 @@
     <Content Include="about.aspx" />
     <Content Include="allblog.aspx" />
     <Content Include="contact.aspx" />
-    <Content Include="dashboard\add_blog.aspx" />
-    <Content Include="dashboard\blog_list.aspx" />
-    <Content Include="dashboard\edit_blog.aspx" />
+    <Content Include="dashboard\addblog.aspx" />
+    <Content Include="dashboard\bloglist.aspx" />
+    <Content Include="dashboard\editblog.aspx" />
     <Content Include="dashboard\index.aspx" />
     <Content Include="dashboard\login.aspx" />
     <Content Include="dashboard\logout.aspx" />
     <Content Include="dashboard\main.aspx" />
+    <Content Include="dashboard\typelist.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="index.aspx" />
     <Content Include="detail.aspx" />
@@ -2060,26 +2061,26 @@
     <Compile Include="contact.aspx.designer.cs">
       <DependentUpon>contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="dashboard\add_blog.aspx.cs">
-      <DependentUpon>add_blog.aspx</DependentUpon>
+    <Compile Include="dashboard\addblog.aspx.cs">
+      <DependentUpon>addblog.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="dashboard\add_blog.aspx.designer.cs">
-      <DependentUpon>add_blog.aspx</DependentUpon>
+    <Compile Include="dashboard\addblog.aspx.designer.cs">
+      <DependentUpon>addblog.aspx</DependentUpon>
     </Compile>
-    <Compile Include="dashboard\blog_list.aspx.cs">
-      <DependentUpon>blog_list.aspx</DependentUpon>
+    <Compile Include="dashboard\bloglist.aspx.cs">
+      <DependentUpon>bloglist.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="dashboard\blog_list.aspx.designer.cs">
-      <DependentUpon>blog_list.aspx</DependentUpon>
+    <Compile Include="dashboard\bloglist.aspx.designer.cs">
+      <DependentUpon>bloglist.aspx</DependentUpon>
     </Compile>
-    <Compile Include="dashboard\edit_blog.aspx.cs">
-      <DependentUpon>edit_blog.aspx</DependentUpon>
+    <Compile Include="dashboard\editblog.aspx.cs">
+      <DependentUpon>editblog.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="dashboard\edit_blog.aspx.designer.cs">
-      <DependentUpon>edit_blog.aspx</DependentUpon>
+    <Compile Include="dashboard\editblog.aspx.designer.cs">
+      <DependentUpon>editblog.aspx</DependentUpon>
     </Compile>
     <Compile Include="dashboard\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
@@ -2105,6 +2106,13 @@
     </Compile>
     <Compile Include="dashboard\main.aspx.designer.cs">
       <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard\typelist.aspx.cs">
+      <DependentUpon>typelist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dashboard\typelist.aspx.designer.cs">
+      <DependentUpon>typelist.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>

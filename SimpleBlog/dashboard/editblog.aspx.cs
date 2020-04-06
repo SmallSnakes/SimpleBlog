@@ -11,7 +11,7 @@ using MySql.Data.MySqlClient;
 
 namespace SimpleBlog.dashboard
 {
-    public partial class edit_blog : System.Web.UI.Page
+    public partial class editblog : System.Web.UI.Page
     {
 
         BlogEditInfo editInfo = new BlogEditInfo();
@@ -117,7 +117,7 @@ namespace SimpleBlog.dashboard
             if (num > 0)
             {
                 Response.Write("<script>alert('更新成功！！');</script>");
-                Response.Redirect("blog_list.aspx");
+                Response.Redirect("bloglist.aspx");
             }
             else
             {

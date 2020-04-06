@@ -11,79 +11,70 @@ namespace SimpleBlog.dashboard
 {
 
 
-    public partial class blog_list
+    public partial class editblog
     {
 
         /// <summary>
-        /// form1 控件。
+        /// title 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.TextBox title;
 
         /// <summary>
-        /// searchBlog 控件。
+        /// summary 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button searchBlog;
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea summary;
 
         /// <summary>
-        /// blogRpt 控件。
+        /// DropDownList1 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater blogRpt;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
 
         /// <summary>
-        /// first 控件。
+        /// releaseDate 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink first;
+        protected global::System.Web.UI.WebControls.TextBox releaseDate;
 
         /// <summary>
-        /// previous 控件。
+        /// pic 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink previous;
+        protected global::System.Web.UI.WebControls.Image pic;
 
         /// <summary>
-        /// next 控件。
+        /// contents 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink next;
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea contents;
 
         /// <summary>
-        /// last 控件。
+        /// editBlog 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink last;
-
-        /// <summary>
-        /// pageNO 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label pageNO;
+        protected global::System.Web.UI.WebControls.Button editBlog;
     }
 }

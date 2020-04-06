@@ -13,7 +13,7 @@
 
 body{font: 14px 宋体 Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif; overflow-x: hidden;}
 .w1000{max-width: 1000px!important; margin:0 auto;}
-.header{height: 120px; line-height: 120px; position: relative; font-size: 16px;}
+.header{height: 10px; line-height: 10px; position: relative; font-size: 16px;}
 .header .logo,.header .welcome-text,.header .nav{position: absolute; top: 0;}
 .header .logo{left: 65px;}
 .header .logo span{display: none;}
@@ -34,8 +34,8 @@ body{font: 14px 宋体 Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-se
 .banner .text::before { position: absolute; right: -5px; content: '\FF1A';}
 
 
-.content{padding:100px 0 160px 0;}
-.content .cont .title{margin-bottom: 60px;}
+.content{padding:10px 0 160px 0;}
+.content .cont .title{margin-bottom: 10px;}
 .content .cont .title a{font-size: 16px; color: #000!important;}
 .content .cont .title .layui-breadcrumb span{position: relative; top: -1px; margin:0 16px;}
 .content .cont .title a.active,.content .cont .title a:hover{color: #ff7f21!important;}
@@ -78,13 +78,13 @@ body{font: 14px 宋体 Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-se
 
 
 .footer-wrap{border-top: 1px solid #402863;}
-.footer{padding:60px 0 80px 0; position: relative; overflow: hidden;}
+.footer{padding:10px 0 -30px 0; position: relative; overflow: hidden;}
 .footer .qrcode{float: left;}
 .footer .practice-mode{position: absolute; right: 0; overflow: hidden;}
 .footer .practice-mode img{float: left;  padding-right: 28px;}
 .footer .practice-mode .text{color: #3f2863; float: left;}
-.footer .practice-mode .text h4{font-size: 20px; line-height: 60px;}
-.footer .practice-mode .text p{line-height: 32px;}
+.footer .practice-mode .text h4{font-size: 20px; line-height: 10px;}
+.footer .practice-mode .text p{line-height: 10px;}
 .footer .practice-mode .text p span{padding-left: 24px;}
 
 

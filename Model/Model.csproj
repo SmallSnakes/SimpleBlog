@@ -47,6 +47,7 @@
     <Compile Include="ContactInfo.cs" />
     <Compile Include="DetailInfo.cs" />
     <Compile Include="IndexInfo.cs" />
+    <Compile Include="TypeListInfo.cs" />
     <Compile Include="UserInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

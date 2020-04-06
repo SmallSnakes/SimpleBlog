@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="blog_list.aspx.cs" Inherits="SimpleBlog.dashboard.blog_list" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="bloglist.aspx.cs" Inherits="SimpleBlog.dashboard.bloglist" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <title>文章列表</title>
      <!-- Bootstrap 3.3.7 -->
     <link rel="stylesheet" href="../Style/bootstrap/dist/css/bootstrap.min.css" />
     <!-- Font Awesome -->
@@ -73,14 +73,14 @@
                                     <ItemTemplate>
                                         <tr>
                                             <td><%#Eval("id")%></td>
-                                            <td><a href="edit_blog.aspx?id=<%#Eval("id")%>"><%#Eval("title")%></a></td>
+                                            <td><a href="editblog.aspx?id=<%#Eval("id")%>"><%#Eval("title")%></a></td>
                                             <td><%#Eval("releaseDate","{0:yyyy-MM-dd HH:mm:ss}")%></td>
                                             <td><%#Eval("typeName")%></td>
                                             <td>
                                                 <img src='<%#Eval("photo") %>' width="100" height="60" /></td>
                                             <td>
 
-                                                <button type="button" class="btn btn-primary" onclick="javascript:window.location.href='edit_blog.aspx?id=<%#Eval("id")%>'" />
+                                                <button type="button" class="btn btn-primary" onclick="javascript:window.location.href='editblog.aspx?id=<%#Eval("id")%>'" />
                                                 编辑</button>
                                                 <a type="button" class="btn btn-success" href="../detail.aspx?id=<%#Eval("id")%>" target="_blank">预览</a>
                                                     <button type="button" class="btn btn-danger" onclick="javascript:window.location.href='?action=delete&id=<%#Eval("id")%>'" />

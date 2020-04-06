@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" ValidateRequest="false" AutoEventWireup="true"   CodeBehind="edit_blog.aspx.cs" Inherits="SimpleBlog.dashboard.edit_blog" %>
+﻿<%@ Page Language="C#" ValidateRequest="false" AutoEventWireup="true"   CodeBehind="editblog.aspx.cs" Inherits="SimpleBlog.dashboard.editblog" %>
 
 <!DOCTYPE html>
 

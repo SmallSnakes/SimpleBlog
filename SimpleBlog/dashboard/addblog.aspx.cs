@@ -11,7 +11,7 @@ using System.Collections;
 
 namespace SimpleBlog.dashboard
 {
-    public partial class add_blog : System.Web.UI.Page
+    public partial class addblog : System.Web.UI.Page
     {
         BlogAddInfo addInfo = new BlogAddInfo();
         BlogAddBLL addBll = new BlogAddBLL();

@@ -11,7 +11,7 @@ namespace SimpleBlog.dashboard
 {
 
 
-    public partial class add_blog
+    public partial class addblog
     {
 
         /// <summary>

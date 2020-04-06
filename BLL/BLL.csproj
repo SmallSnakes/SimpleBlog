@@ -52,6 +52,7 @@
     <Compile Include="IndexInfoBLL.cs" />
     <Compile Include="MainInfoBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TypeListBLL.cs" />
     <Compile Include="UserInfoBLL.cs" />
   </ItemGroup>
   <ItemGroup>
