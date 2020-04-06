@@ -78,6 +78,7 @@
     <Content Include="allblog.aspx" />
     <Content Include="contact.aspx" />
     <Content Include="dashboard\addblog.aspx" />
+    <Content Include="dashboard\addtype.aspx" />
     <Content Include="dashboard\bloglist.aspx" />
     <Content Include="dashboard\editblog.aspx" />
     <Content Include="dashboard\index.aspx" />
@@ -2067,6 +2068,13 @@
     </Compile>
     <Compile Include="dashboard\addblog.aspx.designer.cs">
       <DependentUpon>addblog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard\addtype.aspx.cs">
+      <DependentUpon>addtype.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dashboard\addtype.aspx.designer.cs">
+      <DependentUpon>addtype.aspx</DependentUpon>
     </Compile>
     <Compile Include="dashboard\bloglist.aspx.cs">
       <DependentUpon>bloglist.aspx</DependentUpon>

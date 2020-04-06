@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddTypeBLL.cs" />
     <Compile Include="BlogAddBLL.cs" />
     <Compile Include="BlogEditBLL.cs" />
     <Compile Include="BlogListBLL.cs" />
