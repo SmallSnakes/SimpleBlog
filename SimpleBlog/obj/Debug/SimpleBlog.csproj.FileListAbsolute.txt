@@ -1,3 +1,4 @@
+F:\asp_code\SimpleBlog\SimpleBlog\obj\Debug\SimpleBlog.csprojAssemblyReference.cache
 F:\asp_code\SimpleBlog\SimpleBlog\bin\SimpleBlog.dll.config
 F:\asp_code\SimpleBlog\SimpleBlog\bin\SimpleBlog.dll
 F:\asp_code\SimpleBlog\SimpleBlog\bin\SimpleBlog.pdb
@@ -59,7 +60,6 @@ F:\asp_code\SimpleBlog\SimpleBlog\bin\BLL.pdb
 F:\asp_code\SimpleBlog\SimpleBlog\bin\DAL.pdb
 F:\asp_code\SimpleBlog\SimpleBlog\bin\Model.pdb
 F:\asp_code\SimpleBlog\SimpleBlog\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-F:\asp_code\SimpleBlog\SimpleBlog\obj\Debug\SimpleBlog.csprojAssemblyReference.cache
 F:\asp_code\SimpleBlog\SimpleBlog\obj\Debug\SimpleBlog.csproj.CopyComplete
 F:\asp_code\SimpleBlog\SimpleBlog\obj\Debug\SimpleBlog.dll
 F:\asp_code\SimpleBlog\SimpleBlog\obj\Debug\SimpleBlog.pdb

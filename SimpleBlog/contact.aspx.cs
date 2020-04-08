@@ -52,7 +52,7 @@ namespace SimpleBlog
            
         }
 
-        private void DataBind()
+        private new void  DataBind()
         {
             this.wordsRpt.DataSource = ContactInfoBLL.DataBind();
             this.wordsRpt.DataBind();

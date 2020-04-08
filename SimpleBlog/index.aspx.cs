@@ -18,6 +18,7 @@ namespace SimpleBlog
         {
             Paging();
             DataBind();
+            
         }
         private void Paging()
         {

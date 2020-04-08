@@ -93,7 +93,7 @@ namespace SimpleBlog.dashboard
         }
 
 
-        private void DataBind()
+        private new void DataBind()
         {
             this.typeRpt.DataSource = TypeListBLL.DataBind(info);
             this.typeRpt.DataBind();
