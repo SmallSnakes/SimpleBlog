@@ -57,9 +57,9 @@
                                         <ItemTemplate>
                                             <tr>
                                                 <td><%#Eval("id")%></td>
-                                                <td><a href="edit_type.aspx?id=<%#Eval("id")%>"><%#Eval("typeName")%></a></td>
+                                                <td><a href="edittype.aspx?id=<%#Eval("id")%>"><%#Eval("typeName")%></a></td>
                                                 <td>
-                                                    <button type="button" class="btn btn-primary" onclick="javascript:window.location.href='edit_type.aspx?id=<%#Eval("id")%>'" />编辑</button>
+                                                    <button type="button" class="btn btn-primary" onclick="javascript:window.location.href='edittype.aspx?id=<%#Eval("id")%>'" />编辑</button>
                                                     <button type="button" class="btn btn-danger" onclick="javascript:window.location.href='?action=delete&id=<%#Eval("id")%>'" />删除</button>
                                  
                                                 </td>

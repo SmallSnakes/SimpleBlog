@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    public class AddTypeInfo
+    public class TypeEditInfo
     {
-
-        public string typeName { get ; set ; }
-
+        public string id { get; set; }
+        public string typeName { get; set; }
+        public string editName { get; set; }
     }
 }

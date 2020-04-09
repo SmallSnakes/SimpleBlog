@@ -81,6 +81,7 @@
     <Content Include="dashboard\addtype.aspx" />
     <Content Include="dashboard\bloglist.aspx" />
     <Content Include="dashboard\editblog.aspx" />
+    <Content Include="dashboard\edittype.aspx" />
     <Content Include="dashboard\index.aspx" />
     <Content Include="dashboard\login.aspx" />
     <Content Include="dashboard\logout.aspx" />
@@ -95,6 +96,8 @@
     <Content Include="res\css\bootstrap-theme.css" />
     <Content Include="res\css\Site.css" />
     <Content Include="res\img\banner3.jpg" />
+    <Content Include="res\img\wy_img6.jpg" />
+    <Content Include="res\img\wy_img6.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
@@ -2089,6 +2092,13 @@
     </Compile>
     <Compile Include="dashboard\editblog.aspx.designer.cs">
       <DependentUpon>editblog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard\edittype.aspx.cs">
+      <DependentUpon>edittype.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dashboard\edittype.aspx.designer.cs">
+      <DependentUpon>edittype.aspx</DependentUpon>
     </Compile>
     <Compile Include="dashboard\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>

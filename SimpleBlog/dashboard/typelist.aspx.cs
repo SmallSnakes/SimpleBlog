@@ -33,7 +33,7 @@ namespace SimpleBlog.dashboard
                 if (count > 0)
                 {
                     Response.Write("<script>alert('删除成功！！');</script>");
-                    //Response.Write("< script language = javascript > window.location.href = document.URL;</ script > " ); 
+                   
 
                 }
                 else

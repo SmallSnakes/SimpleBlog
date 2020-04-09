@@ -12,7 +12,7 @@ namespace SimpleBlog.dashboard
 {
     public partial class addtype : System.Web.UI.Page
     {
-        AddTypeInfo info = new AddTypeInfo();
+        TypeAddInfo info = new TypeAddInfo();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["admin"] == null)
@@ -53,7 +53,7 @@ namespace SimpleBlog.dashboard
 
            
             
-            int num = AddTypeBLL.AddType(info);
+            int num = TypeAddBLL.AddType(info);
             if (num == -1)
             {
                 Response.Write("<script>alert('添加失败！');</script>");
@@ -61,10 +61,11 @@ namespace SimpleBlog.dashboard
             else
             {
                 Response.Write("<script>alert('添加成功');</script>");
-               
+                Response.Redirect("addtype.aspx");
+
             }
            
-            Response.Redirect(Request.Url.ToString());
+            
         }
     }
 }

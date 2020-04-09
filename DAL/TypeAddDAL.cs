@@ -8,9 +8,9 @@ using MySql.Data.MySqlClient;
 
 namespace DAL
 {
-    public class AddTypeDAL
+    public class TypeAddDAL
     {
-        public static string JudgeName(AddTypeInfo info)
+        public static string JudgeName(TypeAddInfo info)
         {
             string sql = string.Format("select * from blogtype where typeName ='{0}'", info.typeName);
             MySqlDataReader  dr = SqlHelper.GetReader(sql);
@@ -22,7 +22,7 @@ namespace DAL
             return info.typeName;
 
         }
-        public static int AddType(AddTypeInfo info)
+        public static int AddType(TypeAddInfo info)
         {
             string sql = string.Format("insert into blogtype(typeName) values('{0}')", info.typeName);
             int num = SqlHelper.ExecuteCommand(sql);

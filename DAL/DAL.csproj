@@ -45,7 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddTypeDAL.cs" />
+    <Compile Include="TypeAddDAL.cs" />
     <Compile Include="BlogAddDAL.cs" />
     <Compile Include="BlogEditDAL.cs" />
     <Compile Include="BlogListDAL.cs" />
@@ -55,6 +55,7 @@
     <Compile Include="MainInfoDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlHelper.cs" />
+    <Compile Include="TypeEditDAL.cs" />
     <Compile Include="TypeListDAL.cs" />
     <Compile Include="UserInfoDAL.cs" />
   </ItemGroup>

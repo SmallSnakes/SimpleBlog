@@ -19,7 +19,7 @@
      <link rel='stylesheet' href='http://fonts.font.im/css?family=Source+Sans+Pro:400,300,600,700,300italic,400italic,600italic' />
 </head>
 <body>
-    <<section class="content-header">
+    <section class="content-header">
         <h1>分类管理
         <small>维护文章分类</small>
         </h1>

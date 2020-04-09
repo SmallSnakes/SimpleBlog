@@ -8,17 +8,17 @@ using System.Threading.Tasks;
 
 namespace BLL
 {
-   public class AddTypeBLL
+   public class TypeAddBLL
     {
-        public static string JudgeName(AddTypeInfo info)
+        public static string JudgeName(TypeAddInfo info)
         {
             
-            return AddTypeDAL.JudgeName(info);
+            return TypeAddDAL.JudgeName(info);
 
         }
-        public static int AddType(AddTypeInfo info)
+        public static int AddType(TypeAddInfo info)
         {
-            return AddTypeDAL.AddType(info);
+            return TypeAddDAL.AddType(info);
         }
     }
 }

@@ -23,13 +23,13 @@
                                         </ItemTemplate>
                                     </asp:Repeater>
                                     <div class="btn-box">
-                                        <button class="layui-btn layui-btn-primary">
+                                        <button class="layui-btn layui-btn-primary" style="width:300px;">
                                             <asp:HyperLink ID="previous" runat="server" Text="上一篇">
 
                                             </asp:HyperLink>
 
                                         </button>
-                                        <button class="layui-btn layui-btn-primary">
+                                        <button class="layui-btn layui-btn-primary" style="width:300px;">
                                             <asp:HyperLink ID="next" runat="server" Text="下一篇">
                                             </asp:HyperLink>
                                         </button>
@@ -79,4 +79,5 @@
                 </div>
             </div>
         </form>
+   
 </asp:Content>

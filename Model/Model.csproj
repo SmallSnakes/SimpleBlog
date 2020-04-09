@@ -41,13 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddTypeInfo.cs" />
+    <Compile Include="TypeAddInfo.cs" />
     <Compile Include="BlogAddInfo.cs" />
     <Compile Include="BlogEditInfo.cs" />
     <Compile Include="BlogListInfo.cs" />
     <Compile Include="ContactInfo.cs" />
     <Compile Include="DetailInfo.cs" />
     <Compile Include="IndexInfo.cs" />
+    <Compile Include="TypeEditInfo.cs" />
     <Compile Include="TypeListInfo.cs" />
     <Compile Include="UserInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

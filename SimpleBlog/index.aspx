@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="SimpleBlog" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="SimpleBlog._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+
     
 <form id="form1" runat="server">
 <div class="content-body">
@@ -66,21 +67,26 @@
 
           <%--  最新文章--%>
             <aside class="col-md-4">
-                <div class="widget widget-recent-posts">
+                <div >
                     <h3 class="widget-title">关于我</h3>
-                    <ul>
+                    <div style="padding-left:0px;"><img src="res/img/wy_img6.png" /></div>
+                    <div style="height:30px;text-align:center;padding-top:10px;">直道相思了无益，未妨惆怅是轻狂。</div>
+                    <div style="text-align:center;font-size:15px;font-weight:bolder;">
+                    <ul class="nav navbar-nav">
                         <li>
-                            <a href="#">ID：帅气的阿伟</a>
+                            <a href="#">ID:帅帅的阿伟</a>
                         </li>
                         <li>
-                            <a href="#">QQ：1530692952</a>
+                            <a href="#">浏览量:999+</a>
                         </li>
-                        <li>
-                            <a href="#">直道相思了无益，未妨惆怅是轻狂。</a>
+                         <li>
+                            <a href="#">留言:999+</a>
                         </li>
+                         
                     </ul>
+                    </div>
                 </div>
-                <div class="widget widget-archives">
+                <div class="widget widget-archives" style="padding-top:70px;">
                     <h3 class="widget-title">归档</h3>
                     <ul>
                         <li>
@@ -142,14 +148,13 @@
            
                 <div class="rss">
                     <a href="#"><span class="ion-social-rss-outline"></span> 来点音乐？</a>
+                    <%--音乐播放器--%>
+                    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=86 src="//music.163.com/outchain/player?type=2&id=515888361&auto=0&height=66">  </iframe>
                 </div>
 
-                
+                 
             </aside>
-            <div class="widget widget-recent-posts">
-                <%--音乐播放器--%>
-               <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=86 src="//music.163.com/outchain/player?type=2&id=515888361&auto=0&height=66">  </iframe>
-           </div>
+           
            </div>
     </div>
 </div>
@@ -157,7 +162,6 @@
     
    <!--动态线条背景-->
 <script type="text/javascript"
-color="220,220,220" opacity='0.8' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
-</script>
+color="220,220,220" opacity='1.0' zIndex="-1" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
 
 </asp:Content>
