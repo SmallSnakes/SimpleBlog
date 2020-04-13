@@ -71,22 +71,31 @@
                     <h3 class="widget-title">关于我</h3>
                     <div style="padding-left:0px;"><img src="res/img/wy_img6.png" /></div>
                     <div style="height:30px;text-align:center;padding-top:10px;">直道相思了无益，未妨惆怅是轻狂。</div>
-                    <div style="text-align:center;font-size:15px;font-weight:bolder;">
+                    <div style="text-align:center;font-size:14px;font-weight:bolder;">
                     <ul class="nav navbar-nav">
                         <li>
                             <a href="#">ID:帅帅的阿伟</a>
                         </li>
                         <li>
-                            <a href="#">浏览量:999+</a>
+                            <a href="#">访问量:<asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></a>
                         </li>
                          <li>
                             <a href="#">留言:999+</a>
                         </li>
-                         
+                        
+                          <li>
+                            当前在线人数:<asp:Label ID="Label2" runat="server" Text="Label" style="margin-top:-25px"></asp:Label>
+                        </li>
+                        <li style="margin-left:30px;">
+                           Test:Test
+                        </li>
+                        <li style="margin-left:30px;">
+                             QQ: 1530692952
+                        </li>
                     </ul>
                     </div>
                 </div>
-                <div class="widget widget-archives" style="padding-top:70px;">
+                <div class="widget widget-archives" style="padding-top:90px;">
                     <h3 class="widget-title">归档</h3>
                     <ul>
                         <li>

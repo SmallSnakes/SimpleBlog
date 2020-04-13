@@ -16,6 +16,18 @@ namespace SimpleBlog
         IndexInfo info = new IndexInfo();
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+               if (Application["total"] != null)
+               {
+                    Label1.Text = Application["total"].ToString();
+                    Label2.Text = Application["online"].ToString();
+                }
+                if (System.Convert.ToInt32(Application["total"]) >= 1000)
+                {
+                    Label1.Text = "999+";
+                }
+            }
             Paging();
             DataBind();
             

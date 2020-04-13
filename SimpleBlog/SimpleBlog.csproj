@@ -88,6 +88,7 @@
     <Content Include="dashboard\main.aspx" />
     <Content Include="dashboard\typelist.aspx" />
     <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
     <Content Include="index.aspx" />
     <Content Include="detail.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -2134,6 +2135,9 @@
     </Compile>
     <Compile Include="dashboard\typelist.aspx.designer.cs">
       <DependentUpon>typelist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>

@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GlobalInfoDAL.cs" />
     <Compile Include="TypeAddDAL.cs" />
     <Compile Include="BlogAddDAL.cs" />
     <Compile Include="BlogEditDAL.cs" />
