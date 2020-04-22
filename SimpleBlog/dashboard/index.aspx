@@ -91,7 +91,7 @@
                         </a>
                         <ul class="treeview-menu">
                             <li><a class="mainMenu" data-src="addblog.aspx" href="javascript:void(0);">新增文章</a></li>
-                            <li><a class="mainMenu" data-src="bloglist.aspx" href="javascript:void(0);">文章列表</a></li>
+                            <li><a class="mainMenu" data-src="listblog.aspx" href="javascript:void(0);">文章列表</a></li>
                         </ul>
                     </li>
                     <li class="treeview">
@@ -102,7 +102,7 @@
                         </a>
                         <ul class="treeview-menu">
                             <li><a class="mainMenu" data-src="addtype.aspx" href="javascript:void(0);">新增分类</a></li>
-                            <li><a class="mainMenu" data-src="typelist.aspx" href="javascript:void(0);">分类列表</a></li>
+                            <li><a class="mainMenu" data-src="listtype.aspx" href="javascript:void(0);">分类列表</a></li>
                         </ul>
                     </li>
                     <li class="treeview">
@@ -113,7 +113,7 @@
                         </a>
                         <ul class="treeview-menu">
 
-                            <li><a class="mainMenu" data-src="commentlist.aspx" href="javascript:void(0);">评论列表</a></li>
+                            <li><a class="mainMenu" data-src="listcomment.aspx" href="javascript:void(0);">评论列表</a></li>
                         </ul>
                     </li>
 
@@ -125,7 +125,7 @@
                         </a>
                         <ul class="treeview-menu">
 
-                            <li><a class="mainMenu" data-src="contactlist.aspx" href="javascript:void(0);">留言列表</a></li>
+                            <li><a class="mainMenu" data-src="listcontact.aspx" href="javascript:void(0);">留言列表</a></li>
                         </ul>
                     </li>
                     <li class="treeview">
@@ -135,8 +135,8 @@
                             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a class="mainMenu" data-src="add_user.aspx" href="javascript:void(0);">新增用户</a></li>
-                            <li><a class="mainMenu" data-src="userlist.aspx" href="javascript:void(0);">用户列表</a></li>
+                            <li><a class="mainMenu" data-src="adduser.aspx" href="javascript:void(0);">新增用户</a></li>
+                            <li><a class="mainMenu" data-src="listuser.aspx" href="javascript:void(0);">用户列表</a></li>
                         </ul>
                     </li>
 
@@ -158,7 +158,7 @@
                  Anything you want
             </div>
             <!-- Default to the left -->
-            <strong>Copyright &copy; 2020 <a href="#">by 一个孤独的调调。</a>.</strong>
+            <strong>Copyright &copy; 2020 <a href="#">by 帅气的阿伟</a>.</strong>
         </footer>
 
         <!-- Control Sidebar -->

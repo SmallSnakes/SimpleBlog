@@ -79,14 +79,19 @@
     <Content Include="contact.aspx" />
     <Content Include="dashboard\addblog.aspx" />
     <Content Include="dashboard\addtype.aspx" />
-    <Content Include="dashboard\bloglist.aspx" />
+    <Content Include="dashboard\adduser.aspx" />
+    <Content Include="dashboard\edituser.aspx" />
+    <Content Include="dashboard\listblog.aspx" />
     <Content Include="dashboard\editblog.aspx" />
     <Content Include="dashboard\edittype.aspx" />
     <Content Include="dashboard\index.aspx" />
+    <Content Include="dashboard\listcomment.aspx" />
+    <Content Include="dashboard\listcontact.aspx" />
+    <Content Include="dashboard\listuser.aspx" />
     <Content Include="dashboard\login.aspx" />
     <Content Include="dashboard\logout.aspx" />
     <Content Include="dashboard\main.aspx" />
-    <Content Include="dashboard\typelist.aspx" />
+    <Content Include="dashboard\listtype.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="index.aspx" />
@@ -2080,12 +2085,26 @@
     <Compile Include="dashboard\addtype.aspx.designer.cs">
       <DependentUpon>addtype.aspx</DependentUpon>
     </Compile>
-    <Compile Include="dashboard\bloglist.aspx.cs">
-      <DependentUpon>bloglist.aspx</DependentUpon>
+    <Compile Include="dashboard\adduser.aspx.cs">
+      <DependentUpon>adduser.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="dashboard\bloglist.aspx.designer.cs">
-      <DependentUpon>bloglist.aspx</DependentUpon>
+    <Compile Include="dashboard\adduser.aspx.designer.cs">
+      <DependentUpon>adduser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard\edituser.aspx.cs">
+      <DependentUpon>edituser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dashboard\edituser.aspx.designer.cs">
+      <DependentUpon>edituser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard\listblog.aspx.cs">
+      <DependentUpon>listblog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dashboard\listblog.aspx.designer.cs">
+      <DependentUpon>listblog.aspx</DependentUpon>
     </Compile>
     <Compile Include="dashboard\editblog.aspx.cs">
       <DependentUpon>editblog.aspx</DependentUpon>
@@ -2108,6 +2127,27 @@
     <Compile Include="dashboard\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="dashboard\listcomment.aspx.cs">
+      <DependentUpon>listcomment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dashboard\listcomment.aspx.designer.cs">
+      <DependentUpon>listcomment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard\listcontact.aspx.cs">
+      <DependentUpon>listcontact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dashboard\listcontact.aspx.designer.cs">
+      <DependentUpon>listcontact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard\listuser.aspx.cs">
+      <DependentUpon>listuser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dashboard\listuser.aspx.designer.cs">
+      <DependentUpon>listuser.aspx</DependentUpon>
+    </Compile>
     <Compile Include="dashboard\login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2129,12 +2169,12 @@
     <Compile Include="dashboard\main.aspx.designer.cs">
       <DependentUpon>main.aspx</DependentUpon>
     </Compile>
-    <Compile Include="dashboard\typelist.aspx.cs">
-      <DependentUpon>typelist.aspx</DependentUpon>
+    <Compile Include="dashboard\listtype.aspx.cs">
+      <DependentUpon>listtype.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="dashboard\typelist.aspx.designer.cs">
-      <DependentUpon>typelist.aspx</DependentUpon>
+    <Compile Include="dashboard\listtype.aspx.designer.cs">
+      <DependentUpon>listtype.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

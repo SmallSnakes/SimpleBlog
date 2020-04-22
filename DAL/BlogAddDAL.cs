@@ -12,7 +12,7 @@ namespace DAL
 {
   public class BlogAddDAL
     {
-        public static ArrayList ShowBlogType()
+        public static ArrayList showBlogType()
         {
             ArrayList ar = new ArrayList();
             BlogAddInfo info = new BlogAddInfo();
@@ -28,7 +28,7 @@ namespace DAL
             return ar;
         }
         
-        public static ArrayList ChoseBlogType(BlogAddInfo addInfo)
+        public static ArrayList choseBlogType(BlogAddInfo addInfo)
         {
             ArrayList ar = new ArrayList();
             BlogAddInfo info = new BlogAddInfo();
@@ -43,7 +43,7 @@ namespace DAL
             return ar;
         }
 
-        public static int AddBlog(BlogAddInfo addInfo)
+        public static int addBlog(BlogAddInfo addInfo)
         {
             string sql = string.Format("insert into blog(title,releaseDate,contents,typeId,photo,summary) values('{0}','{1}','{2}','{3}','{4}','{5}')", addInfo.title, addInfo.releaseDate, addInfo.contents, addInfo.typeId, addInfo.photo, addInfo.summary);
             int num = SqlHelper.ExecuteCommand(sql);

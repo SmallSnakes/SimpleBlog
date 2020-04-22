@@ -2,7 +2,6 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    
 <form id="form1" runat="server">
 <div class="content-body">
     <div class="container">
@@ -23,11 +22,7 @@
                                     <span class="views-count"><a href="#">0 阅读</a></span>
                                 </div>
                             </header>
-                             
-                                       <%-- <div class="img">
-                                            <img src="<%#Eval("photo")%>" alt="" />
-                                        </div>
-                                    --%>
+                                
                             <div class="entry-content clearfix">
                                 <p><%#Eval("summary").ToString().Length>120?Eval("summary").ToString().Substring(0,120)+"..":Eval("summary") %> </p>
                                 <div class="read-more cl-effect-14">
@@ -167,10 +162,9 @@
            </div>
     </div>
 </div>
- </form>   
+</form>
+<!--动态线条背景-->
+<script type="text/javascript" color="220,220,220" opacity='1.0' zIndex="-1" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"> </script>
     
-   <!--动态线条背景-->
-<script type="text/javascript"
-color="220,220,220" opacity='1.0' zIndex="-1" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
-
 </asp:Content>
+

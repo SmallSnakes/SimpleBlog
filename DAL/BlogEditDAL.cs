@@ -11,7 +11,7 @@ namespace DAL
 {
     public class BlogEditDAL
     {
-        public static BlogEditInfo ShowEditBlog(BlogEditInfo editInfo)
+        public static BlogEditInfo showEditBlog(BlogEditInfo editInfo)
         {
             
             BlogEditInfo info = new BlogEditInfo();
@@ -28,7 +28,7 @@ namespace DAL
             }
             return info;
         }
-        public static ArrayList ShowBlogType()
+        public static ArrayList showBlogType()
         {
             ArrayList ar = new ArrayList();
             BlogAddInfo info = new BlogAddInfo();
@@ -45,7 +45,7 @@ namespace DAL
             return ar;
         }
 
-        public static ArrayList ChoseBlogType(BlogEditInfo editInfo)
+        public static ArrayList choseBlogType(BlogEditInfo editInfo)
         {
             ArrayList ar = new ArrayList();
             BlogAddInfo info = new BlogAddInfo();
@@ -60,7 +60,7 @@ namespace DAL
             return ar;
         }
 
-        public static int UpdateBlog(BlogEditInfo editInfo)
+        public static int updateBlog(BlogEditInfo editInfo)
         {
             string sql = string.Format("update blog.blog set title='{0}', summary='{1}',releaseDate='{2}',  contents='{3}', typeId='{4}', photo='{5}' where id='{6}';", editInfo.title, editInfo.summary, editInfo.releaseDate, editInfo.contents, editInfo.typeId, editInfo.photo, editInfo.id);
             int num = SqlHelper.ExecuteCommand(sql);

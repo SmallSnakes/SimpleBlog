@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="typelist.aspx.cs" Inherits="SimpleBlog.dashboard.typelist" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="listtype.aspx.cs" Inherits="SimpleBlog.dashboard.typelist" %>
 
 <!DOCTYPE html>
 

@@ -59,6 +59,8 @@
     <Compile Include="TypeEditDAL.cs" />
     <Compile Include="TypeListDAL.cs" />
     <Compile Include="UserInfoDAL.cs" />
+    <Compile Include="UserListDAL.cs" />
+    <Compile Include="UserManageDAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Model\Model.csproj">

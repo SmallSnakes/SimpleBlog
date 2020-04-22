@@ -57,6 +57,8 @@
     <Compile Include="TypeEditBLL.cs" />
     <Compile Include="TypeListBLL.cs" />
     <Compile Include="UserInfoBLL.cs" />
+    <Compile Include="UserListBLL.cs" />
+    <Compile Include="UserManageBLL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">

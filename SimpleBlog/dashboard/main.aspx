@@ -56,7 +56,7 @@
                     <div class="icon">
                         <i class="ion ion-document"></i>
                     </div>
-                    <a href="bloglist.aspx" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                    <a href="listblog.aspx" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <!-- ./col -->
@@ -72,7 +72,7 @@
                     <div class="icon">
                         <i class="ion ion-stats-bars"></i>
                     </div>
-                    <a href="typelist.aspx" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                    <a href="listtype.aspx" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <!-- ./col -->
@@ -88,7 +88,7 @@
                     <div class="icon">
                         <i class="ion ion-person"></i>
                     </div>
-                    <a href="userlist.aspx" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                    <a href="listuser.aspx" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
             </div>
 
@@ -104,7 +104,7 @@
                     <div class="icon">
                         <i class="ion ion-pricetag"></i>
                     </div>
-                    <a href="commentlist.aspx" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                    <a href="listcomment.aspx" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
             </div>
         </div>
@@ -122,7 +122,7 @@
                     <div class="icon">
                         <i class="ion ion-chatbubbles"></i>
                     </div>
-                    <a href="contactlist.aspx" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                    <a href="listcontact.aspx" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
             </div>
         </div>
