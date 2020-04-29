@@ -17,7 +17,7 @@ namespace DAL
         }
         public static DataTable DataBind()
         {
-            string sql = " select name,contents,date  from words where state=1 order by date desc";
+            string sql = " select name,contents,date  from words where state=1 order by date desc limit 10";
             DataTable dt = SqlHelper.GetDataSet(sql);
             return dt;
         }

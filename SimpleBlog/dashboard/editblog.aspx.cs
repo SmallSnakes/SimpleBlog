@@ -91,7 +91,6 @@ namespace SimpleBlog.dashboard
             if (String.IsNullOrEmpty(editInfo.title))
             {
                 Response.Write("<script>alert('文章标题不能为空！！');</script>");
-                
                 return;
             }
             if (String.IsNullOrEmpty(editInfo.summary))

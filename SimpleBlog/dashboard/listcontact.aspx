@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="listcontact.aspx.cs" Inherits="SimpleBlog.dashboard.listcontact" %>
+﻿<%@ Page Language="C#" EnableEventValidation="false" AutoEventWireup="true" CodeBehind="listcontact.aspx.cs" Inherits="SimpleBlog.dashboard.listcontact" %>
 
 <!DOCTYPE html>
 
@@ -38,7 +38,7 @@
 
 
                             <table class="table table-striped table-hover table-bordered">
-                                <asp:Repeater ID="wordsRpt" runat="server">
+                                <asp:Repeater ID="contactRpt" runat="server">
                                     <HeaderTemplate>
                                         <tr>
                                             <th>ID</th>
@@ -65,13 +65,14 @@
                                                 审核</button>
                                                     <button type="button" class="btn btn-danger" onclick="javascript:window.location.href='?action=delete&id=<%#Eval("id")%>'" />
                                                 删除</button>
+                                                   
                                             </td>
                                         </tr>
                                     </ItemTemplate>
                                 </asp:Repeater>
                             </table>
                     
-                            <div style="float: right">
+                            <%--<div style="float: right">
                                 <ul class="pagination">
                                     <li class="page-item">
                                         <asp:HyperLink ID="first" runat="server" class="page-link" Text="首页"></asp:HyperLink>
@@ -91,7 +92,7 @@
                                         <asp:Label ID="pageNO" runat="server" class="page-link"></asp:Label>
                                     </li>
                                 </ul>
-                            </div>
+                            </div>--%>
                         </div>
                     </div>
                 </div>

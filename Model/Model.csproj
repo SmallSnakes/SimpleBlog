@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ContactManageInfo.cs" />
     <Compile Include="GlobalInfo.cs" />
     <Compile Include="TypeAddInfo.cs" />
     <Compile Include="BlogAddInfo.cs" />

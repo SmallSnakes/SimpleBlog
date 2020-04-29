@@ -52,6 +52,7 @@ namespace SimpleBlog.dashboard
             else
             {
                 Response.Write("<script>alert('添加成功');</script>");
+                
             }
         }
     }
