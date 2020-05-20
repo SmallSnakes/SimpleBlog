@@ -24,13 +24,13 @@ namespace SimpleBlog.dashboard
         protected global::System.Web.UI.WebControls.Label blog;
 
         /// <summary>
-        /// type 控件。
+        /// words 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label type;
+        protected global::System.Web.UI.WebControls.Label words;
 
         /// <summary>
         /// user 控件。
@@ -49,14 +49,5 @@ namespace SimpleBlog.dashboard
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label comment;
-
-        /// <summary>
-        /// words 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label words;
     }
 }

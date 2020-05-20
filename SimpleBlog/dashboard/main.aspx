@@ -14,9 +14,13 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
      <link rel='stylesheet' href='http://fonts.font.im/css?family=Source+Sans+Pro:400,300,600,700,300italic,400italic,600italic' />
+
+    <%--echarts--%>
+    <script src="../Scripts/echarts.min.js"></script>
+
 </head>
 <body>
-    <!-- Content Header (Page header) -->
+    
     <section class="content-header">
         <h1>后台主页
         <small>主页</small>
@@ -27,9 +31,9 @@
         </ol>
     </section>
 
-    <!-- Main content -->
+    
     <section class="content">
-        <!-- Small boxes (Stat box) -->
+       
         <div class="container-fluid">
             <div class="row">
                 <div class="callout callout-info">
@@ -41,7 +45,7 @@
         </div>
         <div class="row">
             <div class="col-lg-3 col-xs-6">
-                <!-- small box -->
+               
                 <div class="small-box bg-red">
                     <div class="inner">
                         <h3>
@@ -55,9 +59,9 @@
                     <a href="listblog.aspx" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
             </div>
-            <!-- ./col -->
-            <div class="col-lg-3 col-xs-6">
-                <!-- small box -->
+           
+           <%-- <div class="col-lg-3 col-xs-6">
+               
                 <div class="small-box bg-green">
                     <div class="inner">
                         <h3>
@@ -70,10 +74,24 @@
                     </div>
                     <a href="listtype.aspx" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
-            </div>
-            <!-- ./col -->
+            </div>--%>
             <div class="col-lg-3 col-xs-6">
-                <!-- small box -->
+               
+                <div class="small-box bg-purple">
+                    <div class="inner">
+                        <h3>
+                            <asp:Label Text="text" runat="server" ID="words" /></h3>
+
+                        <p>留言总数</p>
+                    </div>
+                    <div class="icon">
+                        <i class="ion ion-chatbubbles"></i>
+                    </div>
+                    <a href="listcontact.aspx" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-xs-6">
+                
                 <div class="small-box bg-yellow">
                     <div class="inner">
                         <h3>
@@ -89,7 +107,7 @@
             </div>
 
             <div class="col-lg-3 col-xs-6">
-                <!-- small box -->
+               
                 <div class="small-box bg-aqua">
                     <div class="inner">
                         <h3>
@@ -103,37 +121,21 @@
                     <a href="listcomment.aspx" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
             </div>
+          
         </div>
 
         <div class="row">
-            <div class="col-lg-3 col-xs-6">
-                <!-- small box -->
-                <div class="small-box bg-purple">
-                    <div class="inner">
-                        <h3>
-                            <asp:Label Text="text" runat="server" ID="words" /></h3>
-
-                        <p>留言总数</p>
-                    </div>
-                    <div class="icon">
-                        <i class="ion ion-chatbubbles"></i>
-                    </div>
-                    <a href="listcontact.aspx" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-                </div>
-            </div>
+             <div id="zhuzhuang" style="width: 600px;height:400px;float:left;display:inline"></div>
+            <div id="bingzhuang" style="width: 500px;height:400px;float:left;display:inline"></div>
         </div>
-    </section>
-
-
-
-    <!-- jQuery 3 -->
-    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-    <!-- Bootstrap 3.3.7 -->
-    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- AdminLTE App -->
-    <script src="../dist/js/adminlte.min.js"></script>
-    <script>
         
+        
+    </section>
+ 
+            
+            
+    <%--获取当前日期--%>
+    <script>       
         function run() {
             var today;
 
@@ -149,6 +151,66 @@
             setTimeout('run()', 1000);
         }
         run();
+    </script> 
+
+    <%-- echarts-图--%>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var zhuzhuang = echarts.init(document.getElementById('zhuzhuang'));
+        var bingzhuang = echarts.init(document.getElementById('bingzhuang'));
+        var wz = document.getElementById("blog").innerText;
+        var yh = document.getElementById("user").innerText;
+        var pl = document.getElementById("comment").innerText;
+        var ly = document.getElementById("words").innerText;
+        // 指定图表的配置项和数据
+        var option = {
+            title: {
+                text: '数据概况'
+            },
+            tooltip: {},
+            //legend: {
+            //    data: ['销量']
+            //},
+            xAxis: {
+                data: ["文章", "留言", "用户", "评论"]
+            },
+            yAxis: {},
+            series: [{
+                name: '总数',
+                type: 'bar',
+                data: [wz, ly, yh, pl]
+            }]
+        };
+        var option1 = {
+            series: [
+                {
+                    name: '访问来源',
+                    type: 'pie',
+                    radius: '55%',
+                    data: [
+                        { value: wz, name: '文章总数' },
+                        { value: yh, name: '用户人数' },
+                        { value: pl, name: '评论个数' },
+                        { value: ly, name: '留言条数' },
+                        { value: 10, name: '分类条数' }
+                    ]
+                }
+            ]
+                
+        }
+        // 使用刚指定的配置项和数据显示图表。
+        
+        zhuzhuang.showLoading();
+        zhuzhuang.hideLoading();
+        zhuzhuang.setOption(option);
+        bingzhuang.setOption(option1);
     </script>
+     <%-- echarts-饼状图--%>
+
+   <%-- <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+   
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+    <script src="../dist/js/adminlte.min.js"></script>--%>
 </body>
 </html>

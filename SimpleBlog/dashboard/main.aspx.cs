@@ -20,7 +20,7 @@ namespace SimpleBlog.dashboard
             countBlog();
             countComment();
             countContact();
-            countType();
+            //countType();
             countUser();
 
         }
@@ -31,14 +31,14 @@ namespace SimpleBlog.dashboard
             int count = MainInfoBLL.countBlog();
             this.blog.Text = count.ToString();
         }
-        protected void countType()
-        {
+        //protected void countType()
+        //{
            
             
-            int count = MainInfoBLL.countType();
+        //    int count = MainInfoBLL.countType();
            
-            this.type.Text = count.ToString();
-        }
+        //    this.type.Text = count.ToString();
+        //}
 
         protected void countUser()
         {
