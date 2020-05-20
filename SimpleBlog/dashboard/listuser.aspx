@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../Style/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="../Style/Ionicons/css/ionicons.min.css" />
     <link rel="stylesheet" href="../dist/css/AdminLTE.min.css" />
-
+    <link rel="stylesheet" href="../Style//css/gridview.css" />
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
      <link rel='stylesheet' href='http://fonts.font.im/css?family=Source+Sans+Pro:400,300,600,700,300italic,400italic,600italic' />
@@ -28,7 +28,7 @@
                 </ol>
             </section>
 
-            <!-- Main content -->
+            
             <section class="content container-fluid">
                 <div class="row">
                     <div class="col-md-12">
@@ -36,50 +36,27 @@
                             <div class="box-header with-border">
                                 <h3 class="box-title">用户列表</h3>
                             </div>
-                                <table class="table table-striped table-hover table-bordered">
-                                    <asp:Repeater ID="userRpt" runat="server">
-                                        <HeaderTemplate>
-                                            <tr>
-                                                <th>ID</th>
-                                                <th>用户名</th>
-                                                <th>操作</th>
-                                            </tr>
-                                        </HeaderTemplate>
+                              
+                                   
+                                    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" OnPageIndexChanging="GridView1_PageIndexChanging" AutoGenerateColumns="False"  OnRowEditing="GridView1_RowEditing" OnRowDeleting="GridView1_RowDeleting" >
+                                        <FooterStyle CssClass="GridViewFooterStyle" BorderStyle="Ridge" HorizontalAlign="Right" />
+                                        <RowStyle CssClass="GridViewRowStyle" HorizontalAlign="Right" />   
+                                        <SelectedRowStyle CssClass="GridViewSelectedRowStyle" />
+                                        <PagerSettings FirstPageText="首页" LastPageText="末页" Mode="NextPreviousFirstLast" NextPageText="下一页" PageButtonCount="6" PreviousPageText="上一页" />
+                                        <PagerStyle CssClass="GridViewPagerStyle" BorderStyle="None" HorizontalAlign="Right" />
+                                        <AlternatingRowStyle CssClass="GridViewAlternatingRowStyle" />
+                                        <HeaderStyle CssClass="GridViewHeaderStyle" />
+                                        <Columns >
+                                            <asp:BoundField DataField="编号" HeaderText="用户ID"  />
+                                            <asp:BoundField DataField="用户名" HeaderText="用户姓名" />
+                                            <asp:BoundField DataField="密码" HeaderText="密码" />
+                                            <asp:CommandField EditText="修改密码" ShowEditButton="True" DeleteText="删除用户" ShowDeleteButton="True" />
+                                        </Columns>
+                                        
+                                    </asp:GridView>
+                                
 
-                                        <ItemTemplate>
-                                            <tr>
-                                                <td><%#Eval("id")%></td>
-                                                <td><a href="edituser.aspx?id=<%#Eval("id")%>"><%#Eval("userName")%></a></td>
-                                                <td>
-                                                    <button type="button" class="btn btn-primary" onclick="javascript:window.location.href='edituser.aspx?id=<%#Eval("id")%>'" />修改密码</button>
-                                                    <button type="button" class="btn btn-danger" onclick="javascript:window.location.href='?action=delete&id=<%#Eval("id")%>'" />删除</button>
-                                                </td>
-                                            </tr>
-                                        </ItemTemplate>
-                                    </asp:Repeater>
-                                </table>
-
-                            <div style="float:right">
-                                <ul class="pagination">
-                                    <li class="page-item">
-                                        <asp:HyperLink ID="first" runat="server" class="page-link" Text="首页"></asp:HyperLink>
-                                    </li>
-                                    <li class="page-item">
-                                        <asp:HyperLink ID="previous" runat="server" class="page-link" Text="上一页"></asp:HyperLink>
-                                    </li>
-                                    <li class="page-item">
-                                        <asp:HyperLink ID="next" runat="server" class="page-link" Text="下一页"></asp:HyperLink>
-                                    </li>
-                                    <li class="page-item">
-                                        <asp:HyperLink ID="last" runat="server" class="page-link" Text="末页"></asp:HyperLink>
-                                    </li>
-                                </ul>
-                                <ul class="pagination">
-                                    <li class="page-item">
-                                        <asp:Label ID="pageNO" runat="server" class="page-link"></asp:Label>
-                                    </li>
-                                </ul>
-                            </div>
+                          
                         </div>
                     </div>
                 </div>

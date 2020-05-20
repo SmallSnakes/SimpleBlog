@@ -1,4 +1,5 @@
 ﻿using DAL;
+using Model;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -13,6 +14,11 @@ namespace BLL
         public static DataTable ShowUser()
         {
             return UserListDAL.ShowUser();
+        }
+        public static int delUser(UserListInfo info)
+        {
+
+            return UserListDAL.delUser(info);
         }
     }
 }

@@ -103,7 +103,7 @@
                     </ul>
                 </div>
 
-                <%--分类--%>
+                <%--分类，这部分暂时写死了--%>
                 <div class="widget widget-category">
                     <h3 class="widget-title">分类</h3>
                     <ul>

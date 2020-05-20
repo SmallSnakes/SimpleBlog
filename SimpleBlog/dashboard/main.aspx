@@ -6,13 +6,9 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-    <!-- Bootstrap 3.3.7 -->
     <link rel="stylesheet" href="../Style/bootstrap/dist/css/bootstrap.min.css" />
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="../Style/font-awesome/css/font-awesome.min.css" />
-    <!-- Ionicons -->
     <link rel="stylesheet" href="../Style/Ionicons/css/ionicons.min.css" />
-    <!-- Theme style -->
     <link rel="stylesheet" href="../dist/css/AdminLTE.min.css" />
 
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>

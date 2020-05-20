@@ -167,6 +167,7 @@
     <Content Include="Style\bootstrap\package.js" />
     <Content Include="Style\css\bootstrap.min.css" />
     <Content Include="Style\css\custom.css" />
+    <Content Include="Style\css\gridview.css" />
     <Content Include="Style\css\highlights\autumn.css" />
     <Content Include="Style\css\highlights\borland.css" />
     <Content Include="Style\css\highlights\bw.css" />
