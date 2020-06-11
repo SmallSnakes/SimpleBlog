@@ -31,7 +31,7 @@ namespace SimpleBlog.dashboard
             if (num > 0)
             {
                 Response.Write("<script>alert('更新成功！！');</script>");
-                Response.Redirect("typelist.aspx");
+                Response.Redirect("listtype.aspx");
             }
             else
             {

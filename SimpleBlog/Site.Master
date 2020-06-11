@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="Style/css/pace.css" />
     <link rel="stylesheet" href="Style/css/custom.css"/>
     <link rel="stylesheet" href="res/css/own.css" />
-
+    
    
     <!-- js -->
     <script src="Style/js/jquery-2.1.3.min.js"></script>
@@ -136,6 +136,17 @@
             });
         };
         gotoTop();
+    </script>
+
+    <script type="text/javascript" src="res/layui/layui.js"></script>
+    <script type="text/javascript">
+        layui.config({
+            base: 'res/js/util/'
+        }).use(['element', 'laypage', 'jquery', 'menu'], function () {
+            element = layui.element, laypage = layui.laypage, $ = layui.$, menu = layui.menu;
+
+            menu.init();
+        })
     </script>
 
 </body>

@@ -11,9 +11,7 @@
     <link rel="stylesheet" href="../Style/Ionicons/css/ionicons.min.css" />
     <link rel="stylesheet" href="../dist/css/AdminLTE.min.css" />
     <link rel="stylesheet" href="../Style//css/gridview.css" />
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-     <link rel='stylesheet' href='http://fonts.font.im/css?family=Source+Sans+Pro:400,300,600,700,300italic,400italic,600italic' />
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -36,8 +34,6 @@
                             <div class="box-header with-border">
                                 <h3 class="box-title">用户列表</h3>
                             </div>
-                              
-                                   
                                     <asp:GridView ID="GridView1" runat="server" AllowPaging="True" OnPageIndexChanging="GridView1_PageIndexChanging" AutoGenerateColumns="False"  OnRowEditing="GridView1_RowEditing" OnRowDeleting="GridView1_RowDeleting" >
                                         <FooterStyle CssClass="GridViewFooterStyle" BorderStyle="Ridge" HorizontalAlign="Right" />
                                         <RowStyle CssClass="GridViewRowStyle" HorizontalAlign="Right" />   
@@ -51,12 +47,8 @@
                                             <asp:BoundField DataField="用户名" HeaderText="用户姓名" />
                                             <asp:BoundField DataField="密码" HeaderText="密码" />
                                             <asp:CommandField EditText="修改密码" ShowEditButton="True" DeleteText="删除用户" ShowDeleteButton="True" />
-                                        </Columns>
-                                        
+                                        </Columns>                                   
                                     </asp:GridView>
-                                
-
-                          
                         </div>
                     </div>
                 </div>

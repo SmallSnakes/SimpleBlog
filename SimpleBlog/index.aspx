@@ -165,6 +165,15 @@
 </form>
 <!--动态线条背景-->
 <script type="text/javascript" color="220,220,220" opacity='1.0' zIndex="-1" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"> </script>
-    
+ <script type="text/javascript" src="res/layui/layui.js"></script>
+    <script type="text/javascript">
+        layui.config({
+            base: 'res/js/util/'
+        }).use(['element', 'laypage', 'jquery', 'menu'], function () {
+            element = layui.element, laypage = layui.laypage, $ = layui.$, menu = layui.menu;
+
+            menu.init();
+        })
+    </script>
 </asp:Content>
 

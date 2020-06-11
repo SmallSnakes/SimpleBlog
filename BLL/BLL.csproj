@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommentManageBLL.cs" />
     <Compile Include="ContactManageBLL.cs" />
     <Compile Include="GlobalInfoBLL.cs" />
     <Compile Include="TypeAddBLL.cs" />

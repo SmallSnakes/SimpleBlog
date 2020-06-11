@@ -11,17 +11,12 @@
 								<figure class="img-responsive-center">
 									<img class="img-responsive" src="Style/img/me.jpg" alt="Developer Image">
 								</figure>
-								<p>  自2013年入学以来，我始终保持着积极向上的心态，严以律己，宽以待人。秉承着“明德，立信”的校训，向着既定的目标不断前进！！！</p>
-								<p>  “宝剑锋从磨砺出，梅花香自苦寒来。”这两年的刻苦学习和努力拼搏，让我的各项成绩，都跻身于年级前列。在老师、同学的指导和帮忙下，我取得了优异的学习成绩</p>
-								<p>  在思想方面，我严格遵守校纪校规，严于律己，宽以待人。积极培养自己正确的人生观、价值观，具有强烈的集体荣誉感和社会责任感。</p>
-								<div class="height-40px"></div>
-								<h2 class="title text-center">关于我</h2>
-								<ul class="social">
-									<li class="facebook"><a href="#"><span class="ion-social-facebook"></span></a></li>
-									<li class="twitter"><a href="#"><span class="ion-social-twitter"></span></a></li>
-									<li class="google-plus"><a href="#"><span class="ion-social-googleplus"></span></a></li>
-									<li class="tumblr"><a href="#"><span class="ion-social-tumblr"></span></a></li>
-								</ul>
+								<p>  本人目前是一个普普通通的大三学生，在临沂大学求学。爱好不多，但比较喜欢学习新的东西，此为ASP.NET的期末大作业，功能不尽完善，还有很多方面没有考虑到！说来惭愧！</p>
+								<p>  这是一个“关于我”页面，目前还没想好怎么介绍自己，先写下一些文字在这里撑一下门面！！！</p>
+								<p>  这是一个“关于我”页面，目前还没想好怎么介绍自己，先写下一些文字在这里撑一下门面！！！</p>
+								<p>  这是一个“关于我”页面，目前还没想好怎么介绍自己，先写下一些文字在这里撑一下门面！！！</p>
+								
+								
 							</div>
 						</article>
 					</main>

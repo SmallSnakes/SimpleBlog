@@ -6,13 +6,9 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-    <!-- Bootstrap 3.3.7 -->
     <link rel="stylesheet" href="../Style/bootstrap/dist/css/bootstrap.min.css" />
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="../Style/font-awesome/css/font-awesome.min.css" />
-    <!-- Ionicons -->
     <link rel="stylesheet" href="../Style/Ionicons/css/ionicons.min.css" />
-    <!-- Theme style -->
     <link rel="stylesheet" href="../dist/css/AdminLTE.min.css" />
      <link rel="stylesheet" href="../dist/css/skins/skin-blue.min.css" />
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -21,50 +17,32 @@
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
         <div class="wrapper">
-             <!-- Main Header -->
         <header class="main-header">
 
-            <!-- Logo -->
             <a href="#" class="logo">
-                <!-- mini logo for sidebar mini 50x50 pixels -->
                 <span class="logo-mini"><b>S</b>B</span>
-                <!-- logo for regular state and mobile devices -->
                 <span class="logo-lg"><b>Simlpe</b>Blog</span>
             </a>
 
-            <!-- Header Navbar -->
             <nav class="navbar navbar-static-top" role="navigation">
-                <!-- Sidebar toggle button-->
                 <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
                     <span class="sr-only">Toggle navigation</span>
                 </a>
-                <!-- Navbar Right Menu -->
                 <div class="navbar-custom-menu">
                     <ul class="nav navbar-nav">
-                        <!-- Messages: style can be found in dropdown.less-->
                         <li class="dropdown messages-menu">
-                            <!-- Menu toggle button -->
                             
                         </li>
-                        <!-- /.messages-menu -->
-                        <!-- Notifications Menu -->
                         <li class="dropdown notifications-menu">
-                            <!-- Menu toggle button -->
                         </li>
-                        <!-- Tasks Menu -->
                         <li class="dropdown tasks-menu">
-                            <!-- Menu Toggle Button -->
                         </li>
-                        <!-- User Account Menu -->
                     </ul>
                 </div>
             </nav>
         </header>
-        <!-- Left side column. contains the logo and sidebar -->
         <aside class="main-sidebar">
-            <!-- sidebar: style can be found in sidebar.less -->
             <section class="sidebar">
-                <!-- Sidebar user panel (optional) -->
                 <div class="user-panel">
                     <div class="pull-left image">
                         <img src="../dist/img/user1-128x128.jpg" class="img-circle" alt="User Image" />
@@ -73,14 +51,11 @@
                         <p>欢迎：
                             <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
                         </p>
-                        <!-- Status -->
                         <a href="#"><i class="fa fa-circle text-success"></i>Online</a>
                     </div>
                 </div>
-                <!-- Sidebar Menu -->
                 <ul class="sidebar-menu" data-widget="tree">
                     <li class="header">导航菜单</li>
-                    <!-- Optionally, you can add icons to the links -->
                     <li><a href="../index.aspx" target="_blank"><i class="fa fa-flag"></i><span>SimlpeBlog前台首页</span></a></li>
                     <li class="active"><a href="javascript:void(0);" class="mainMenu" data-src="main.aspx"><i class="fa fa-home"></i><span>主页</span></a></li>
                     <li class="treeview">
@@ -142,22 +117,15 @@
 
                     <li><a href="logout.aspx"><i class="fa fa-lock"></i><span>安全退出</span></a></li>
                 </ul>
-                <!-- /.sidebar-menu -->
             </section>
-            <!-- /.sidebar -->
         </aside>
-        <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <iframe id="mainIframe" name="mainIframe" width="100%" scrolling="no" onload="this.height=100" frameborder="0" src="main.aspx"></iframe>
-            <!-- /.content-wrapper -->
         </div>
-        <!-- Main Footer -->
         <footer class="main-footer">
-            <!-- To the right -->
             <div class="pull-right hidden-xs">
                  Anything you want
             </div>
-            <!-- Default to the left -->
             <strong>Copyright &copy; 2020 <a href="#">by 帅气的阿伟</a>.</strong>
         </footer>
 

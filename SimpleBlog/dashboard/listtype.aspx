@@ -7,16 +7,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>分类列表</title>
     <link rel="stylesheet" href="../Style/bootstrap/dist/css/bootstrap.min.css" />
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="../Style/font-awesome/css/font-awesome.min.css" />
-    <!-- Ionicons -->
     <link rel="stylesheet" href="../Style/Ionicons/css/ionicons.min.css" />
-    <!-- Theme style -->
     <link rel="stylesheet" href="../dist/css/AdminLTE.min.css" />
 
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-     <link rel='stylesheet' href='http://fonts.font.im/css?family=Source+Sans+Pro:400,300,600,700,300italic,400italic,600italic' />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -31,13 +25,10 @@
                 </ol>
             </section>
 
-            <!-- Main content -->
             <section class="content container-fluid">
 
                 <div class="row">
-                    <!-- left column -->
                     <div class="col-md-12">
-                        <!-- general form elements -->
                         <div class="box box-primary">
                             <div class="box-header with-border">
                                 <h3 class="box-title">分类列表</h3>
@@ -107,11 +98,8 @@
 
 
 
-    <!-- jQuery 3 -->
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-    <!-- Bootstrap 3.3.7 -->
     <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- AdminLTE App -->
     <script src="../dist/js/adminlte.min.js"></script>
     </body>
 </html>

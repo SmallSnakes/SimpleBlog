@@ -27,8 +27,7 @@ namespace SimpleBlog.dashboard
         }
         private new void DataBind()
         {
-            //this.userRpt.DataSource = UserListBLL.ShowUser();
-            //this.userRpt.DataBind();
+
             GridView1.DataSource = UserListBLL.ShowUser();
             
             GridView1.DataBind();

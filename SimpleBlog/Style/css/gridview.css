@@ -14,7 +14,7 @@
     border-left: 1px solid #EBE9ED;
     border-right: 1px solid #EBE9ED;
     width: 200px;
-    height: 30px;
+    height: 40px;
     text-align:center;
 }
 
@@ -29,12 +29,14 @@
     background-color: #5D7B9D;
     font-weight: bold;
     color: White;
+    height:30px;
 }
 
 .GridViewRowStyle {
     background-color: #F7F6F3;
-    width:100px;
+    width: 100px;
     color: #333333;
+    height: 50px;
 }
 
 .GridViewAlternatingRowStyle {
@@ -44,7 +46,7 @@
 
     .GridViewRowStyle td, .GridViewAlternatingRowStyle td {
         border: 1px solid #EBE9ED;
-        height: 30px;
+        height: 40px;
         text-align: center;
     }
 

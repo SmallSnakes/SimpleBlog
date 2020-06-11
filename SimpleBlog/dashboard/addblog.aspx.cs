@@ -45,6 +45,7 @@ namespace SimpleBlog.dashboard
             addInfo.releaseDate = Request.Form["releaseDate"];
             addInfo.typeName = Request.Form["DropDownList1"];
             HttpFileCollection files = Request.Files;
+            //上传文件的保存路径
             string uploadPath = Server.MapPath("~/upload");
             string fileName = "";
             string filePath = "";
@@ -53,11 +54,13 @@ namespace SimpleBlog.dashboard
             if (files.Count > 0)
             {
                 fileName = files[0].FileName;
+                //文件名称为空
                 if (String.IsNullOrEmpty(fileName))
                 {
                     Response.Write("<script>alert('请选择封片图片！！');</script>");
                     return;
                 }
+                //如果目录不存在，就创建
                 if (!System.IO.Directory.Exists(uploadPath))
                 {
                     System.IO.Directory.CreateDirectory(uploadPath);
